@@ -1,0 +1,15 @@
+section {
+    border: 1px solid #a70042;   /* Cor da borda */
+    border-radius: 12px;         /* Cantos arredondados */
+    padding: 50px;               /* Espaço interno */
+    margin: 20px 0;              /* Espaço entre as sections */
+    background-color: rgba(255, 255, 255, 0.85); /* Fundo suave para destacar */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);    /* Sombra leve */
+    transition: transform 0.2s ease;
+    font-family: Georgia, 'Palatino Linotype', serif
+}
+
+
+section:hover {
+    transform: scale(1.01); /* Efeito suave ao passar o mouse */
+}

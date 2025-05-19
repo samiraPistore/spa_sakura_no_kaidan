@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Georgia, 'Palatino Linotype', serif;
+    background-color: #fdfdfd;
+}
+
+/* Cor do texto */
+h2, label, p {
+    color: black;
+}
+
+/* Tamanho do texto */
+p {
+    font-size: 20px;
+}
+
+/* Layout principal da seção */
+section {
+    display: flex;
+    justify-content: flex-start; /* corrigido */
+    align-items: flex-start;     /* corrigido */
+    gap: 10px;
+    min-height: 100vh;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Container do formulário */
+.container {
+    max-width: 600px;
+    padding: 20px;
+    margin: 150px auto 10px auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Campos de entrada */
+textarea, input {
+    width: 100%;
+    max-width: 700px;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    transition: border 0.3s ease;
+}
+
+textarea:focus, input:focus {
+    border: 1px solid rgb(126, 21, 94);
+    outline: none;
+}
+
+/* Botão de envio */
+#botao {
+    background-color: rgb(126, 21, 94);
+    border: none;
+    width: 200px;
+    height: 40px;
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+#botao:hover {
+    background-color: rgb(150, 40, 110);
+}
+
+/* Imagem decorativa */
+img {
+    max-height: 700px;
+    width: auto;
+    margin-top: 150px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .container {
+        margin: 20px auto;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    img {
+        margin-top: 20px;
+        max-height: 300px;
+        width: 90%;
+        object-fit: contain;
+    }
+}

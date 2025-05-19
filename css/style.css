@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    font-family: Georgia, 'Palatino Linotype', serif;
+}
+body {
+    background-image: url('../img/bg_sakura.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    font-family: Georgia, 'Palatino Linotype', serif
+
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /*faz o header fique pra frente dos demais elementos*/
+  
+}
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Sakura no Kaidan*/
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
+nav {
+    display: flex;
+}
+
+/*Propriedades visuais dos links*/
+nav a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: #c50451;
+
+}
+
+/* Criar uma linha abaixo do link do menu */
+nav a:after {
+    content: '';
+    position: absolute;
+    bottom: -4px; /*espaço abaixo do link*/
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #a70042;
+    transition: width 0.3s ease;
+}
+
+/*Faz a linha ir crescendo*/
+nav a:hover:after{
+    width: 100%;
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 150px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        display: none; /* será exibido via JS */
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+}
