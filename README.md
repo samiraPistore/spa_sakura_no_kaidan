@@ -1,6 +1,9 @@
-#Sakura no Kaindan
+# Sakura no Kaidan
 
-##Descrição:
+Bem-vindo à minha aplicação
 
-Este projeto é uma Simple Page Applicatino(SPA) que utiliza AJAX para amanipulção das páginas sem que a página seja recarregada
+## Descrição
+
+Minha SPA é uma aplicação dinâmica que oferece utiliza AJAX com fetch api para manipular as páginas sem recarregar a aplicação. 
+Tecnologias usadas: HTML, CSS, Java Script, Express e AJAX
 
